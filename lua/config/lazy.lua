@@ -21,6 +21,8 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.coding.luasnip" },
     { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.coding.neogen" },
+    { import = "lazyvim.plugins.extras.formatting.black" },
     { import = "plugins" },
   },
   defaults = {

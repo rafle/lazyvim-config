@@ -3,8 +3,11 @@
 -- Add any additional keymaps here
 
 -- Switch ';' and ':'
-vim.api.nvim_set_keymap("n", ":", ";", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", ";", ":", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", ":", ";", { noremap = true })
+vim.api.nvim_set_keymap("n", ";", ":", { noremap = true })
 
 -- Format selection
 vim.keymap.set('v', '<Leader>1f', vim.lsp.buf.format)
+
+-- Folding
+vim.keymap.set('n', '<Leader>n', 'za<CR>j')
